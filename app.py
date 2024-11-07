@@ -11,8 +11,11 @@ from langchain_community.vectorstores import FAISS
 from langchain_community.chat_models import ChatOpenAI
 from langchain_openai import OpenAIEmbeddings
 
-openai_api_key = os.getenv("OPENAI_API_KEY")
 
+openai_api_key = os.getenv("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")
+
+# Initialize OpenAI embeddings with the API key
+embedding_model = OpenAIEmbeddings(openai_api_key=openai_api_key)
 
 # Initialize OpenAI embeddings
 embedding_model = OpenAIEmbeddings()
