@@ -12,6 +12,8 @@ from langchain_community.chat_models import ChatOpenAI
 from langchain_openai import OpenAIEmbeddings
 
 
+# Initialize OpenAI embeddings with the API key
+embedding_model = OpenAIEmbeddings(openai_api_key=openai_api_key)
 
 # Initialize OpenAI embeddings
 embedding_model = OpenAIEmbeddings()
